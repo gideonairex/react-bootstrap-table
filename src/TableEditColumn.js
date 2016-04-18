@@ -45,12 +45,12 @@ class TableEditColumn extends React.Component{
       if(ts.props.editable.validator){
           var valid=ts.props.editable.validator(value);
           if(valid!==true){
-              ts.refs.notifier.notice('error',valid,"Pressed ESC can cancel");
+              //ts.refs.notifier.notice('error',valid,"Pressed ESC can cancel");
               var input = ts.refs.inputRef;
               //animate input
-              ts.clearTimeout();
-              ts.setState({shakeEditor:true});
-              ts.timeouteClear=setTimeout(function(){ts.setState({shakeEditor:false});},300);
+              //ts.clearTimeout();
+              //ts.setState({shakeEditor:true});
+              //ts.timeouteClear=setTimeout(function(){ts.setState({shakeEditor:false});},300);
               input.focus();
               return false;
           }
