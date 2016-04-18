@@ -51,7 +51,7 @@ class TableEditColumn extends React.Component{
               //ts.clearTimeout();
               //ts.setState({shakeEditor:true});
               //ts.timeouteClear=setTimeout(function(){ts.setState({shakeEditor:false});},300);
-              input.focus();
+              //input.focus();
               return false;
           }
       }
