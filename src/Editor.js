@@ -1,7 +1,6 @@
 import React from 'react';
 var Editor=function(editable, attr, format, editorClass, defaultValue){
 
-
     if(editable===true||typeof editable==="string"){//simple declare
         var type=editable===true?'text':editable;
         return (
@@ -81,7 +80,7 @@ var Editor=function(editable, attr, format, editorClass, defaultValue){
     }
     //default return for other case of editable
     return(
-        <input {...attr} type="text" className={(editorClass||"")+" form-control editor edit-text"}/>
+        <input {...attr} defaultValue={defaultValue} type="text" className={(editorClass||"")+" form-control editor edit-text"}/>
     )
 };
 
